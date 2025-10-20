@@ -1,7 +1,12 @@
 {
   "version": 2,
   "framework": "vite",
-  "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
+  "output": {
+    "directory": "dist",
+    "include": ["**/*"],
+    "exclude": ["node_modules", "vercel.json"]
+  }
 }
